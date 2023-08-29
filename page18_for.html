@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page18_for.html</title>
+</head>
+<body>
+    <h1>바복문 루프, for 루프문</h1>
+    <!-- 반복문
+    <1>for
+    <2> while
+    <3> do~while
+      for(선언문;조건식;증감식){
+        실행문;
+      }          
+            -->
+            <script>
+                for(let i=0;i<5;i++){
+                document.write('환영합니다'+i,"<br>");
+                }
+                document.write("<hr>");
+            </script>
+            <script>
+                for(let gol=1;gol<=100;gol+=10){
+                document.write('@'+gol,"");
+                }
+                document.write("<hr>");
+            </script>
+            <script>
+                for(let t=100;t>=1;t-=3){
+                document.write('fff'+t,"");
+                }
+                document.write("<hr>");
+
+                // for(;;){
+                //     document.write("@")
+                // } 무한루프
+            </script>
+            <script>
+                let dan=prompt('구구단의 몇단을 할까요?','2,3,4,5,6,7,8,9')
+                for(let dan=1;dan<=9;dan+=1){
+                document.write('2x'+dan+"="+dan*2+"<br>");
+                }
+            </script>
+
+
+</body>
+</html>

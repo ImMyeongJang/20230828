@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page08_operator.html</title>
+</head>
+<body>
+    <h1>자바스크립트 연산자</h1>
+    <h2>산술연산자(+,-,*,/,%)</h2>
+    <script>
+        let num1=8;
+        let num2=10;
+        document.write(num1+num2,"<br>");
+        document.write(num1-num2,"<br>");
+        document.write(num1*num2,"<br>");
+        document.write(num1/num2,"<br>");
+        document.write(num1%num2,"<br>");        
+    </script>
+    <Hr>
+        <h3>증감연산자 ++ -- </h3>
+        <script>
+            let y=3;
+            document.write('y: ',y,'<br>');
+            y++;//y+1;
+            document.write('y: ',y,'<br>');
+            ++y;
+            document.write('y: ',y,'<Br>');
+                //단독으로 사용하지 않을 경우 변수 앞에 오는지,
+                //뒤에 오는지에 따라 다르게 동작할 수 있다.
+                //전위 연산자: 1을 증가시킨뒤 해당 변수를 사용한다
+                //후위 연산자: 변수가 가진값을 먼저 사용한 뒤에 1을 증가시킨다.
+
+           let x=++y; //값을 1증가시킨뒤 그값을 x에 할당
+           document.write('<hr>');
+           document.write('x= ',x,' y=',y,'<br>');
+
+           y=5;
+           let z=y++;
+           document.write('z= ',z,' y= ',y,'<br>');
+           --y;
+           document.write('y= ',y,'<br>');
+
+           y=5;
+           x=y--;
+           document.write("z= ",z," y= ",y,"<br>");
+
+           y=5;
+           x=--y;
+           document.write("z= ",z," y= ",y,"<br>");
+
+           </script>
+</body>
+</html>

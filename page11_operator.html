@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page11_operator</title>
+</head>
+<body>
+    <h1>논리연산자</h1>
+    <h2>&&(and), ||(or), !(not)</h2>
+    <script>
+        let a=50;
+        let b=60;
+
+        const print=function(str){
+            document.write('<h3>',str,'</h3>');
+
+        }
+        print('a='+a+' b='+b);
+        print('(a>b)&&(b==60):'+((a>b)&&b==60));
+        print('(a&lt;b)&&(b==60):'+((a<b)&&b==60)); // < 이거는 html에서 문장시작으로알아서 오류
+
+
+        print('a='+a+' b='+b);
+        print('(a>b)||(b==60):'+((a>b)||b==60));
+        print('(a&lt;b)||(b==60):'+((a<b)||b==60));
+
+        print(!true); //false
+        print(!false); //true
+
+    </script>
+
+    <h3>Escape문자(제어문자)</h3>
+    <ul>
+        <li> &lt; : less than </li>
+        <li> &gt; : greater than</li>
+        <li> &quot; : 쌍따옴표</li>
+        <li> & </li>
+        <li> &copy; : copyright </li>
+        <li> 멀  티  캠&nbsp;&nbsp;&nbsp;퍼  스 </li> 
+    </ul>
+</body>
+</html>

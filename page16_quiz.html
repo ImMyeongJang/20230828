@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 요청시 해당 사이트 띄우기</title>
+</head>
+<body>
+    <!-- <script>
+    let site=prompt('어디로가고싶나요?','바다,산,강,그외')
+    //네이버 초록, 구글 퍼플, 다음 파랑, 그외 빨강
+    if(site=='바다'){
+        location.href='http://www.naver.com';
+    }
+    else if(site=='산'){
+        location.href='http://www.google.com';
+    }
+    else if(site=='강'){
+        location.href='http://www.daum.net';
+    }    
+    else{
+        location.href='http://www.daum.net'; document.body.bgColor='red';
+    }
+    </script> -->
+
+    <script>
+        let admin=prompt('계정을입력해주세요?','관리자, 일반')
+        if('관리자'==admin){
+            alert('관리자입니다');    
+        }
+        else{
+            document.write('일반유저입니다.');
+            location.reload('다시입력하세요');//새로고침
+        }
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let time=prompt('지금은 오전, 오후?','오전, 오후');
+   
+    
+    switch(time){
+        case '오전':
+        for(let i=1;i<=3;i++){
+                document.write('굿모닝!!',"<br>");
+                }
+                document.write("<hr>");
+                break;
+        case '오후':
+        for(let i=0;i<6;i++){
+                document.write('굿애프터눈!!',"<br>");
+                }
+                document.write("<hr>");
+            break;
+        
+        default:
+        for(let i=0;i<11;i++){
+                document.write('굿나잇!!',"<br>");
+                }
+                document.write("<hr>");
+        }
+    </script>
+</body>
+</html>

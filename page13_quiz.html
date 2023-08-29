@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz13</title>
+</head>
+<body>
+    <script>
+        function print(str){
+            // document.write('<h3>'+str+"</h3>");
+            document.write(`<h3>${str}</h3>`); //탭키 위 `` 이거로 ${}값을 가져올수있음
+        }
+
+        //  let price=prompt('상품의 가격을 입력하세요');
+        //  let qty=prompt('상품 수량을 입력하세요');
+
+        // print(`가격: ${price}`);
+        // print(`수량: ${qty}`);
+        // print(`총가격: ${price*qty}`);
+
+        // let total=prompt('전체구매금액');
+        // let qty2=prompt('하나당구매금액');
+        // print(`전체 구매 금액: ${total}`);
+        // print(`수량: ${qty2}`);
+        // print(`물건개수?: ${total/qty2}`);
+
+
+        let day1=25;
+        let day2=10;
+        let avg=(day1+day2)/2;
+        print(`평균온도: ${avg}도`);
+
+         
+    </script>
+<hr> 
+    <script>
+        row=prompt('12.33','1232.3333');
+        column=prompt('12.33','56.433');
+
+        let result=parsefloat(row)*parsefloat(column);
+        print(`${result}`);
+    </script>
+
+</body>
+</html>
